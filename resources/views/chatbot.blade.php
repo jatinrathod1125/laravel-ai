@@ -1,0 +1,223 @@
+@extends('layouts.master')
+
+@section('title', 'Chatbot')
+
+@section('content')
+
+<body class="chatbot">
+
+        <div class="main-center-content-m-left center-content search-sticky">
+            <div class="question_answer__wrapper__chatbot">
+                <div class="single__question__answer">
+                    <div class="question_user">
+                        <div class="left_user_info">
+                            <img src="{{ URL::asset('build/images/avatar/03.png') }}" alt="avatar">
+                            <div class="question__user">what is openup?</div>
+                        </div>
+                        <div class="edit__icon openuptip" tooltip="Edit It">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                    <div class="answer__area">
+                        <div class="thumbnail">
+                            <img src="{{ URL::asset('build/images/avatar/04.png') }}" alt="avatar">
+                        </div>
+                        <div class="answer_main__wrapper">
+                            <h4 class="common__title">Openup</h4>
+                            <p class="disc">
+                                The Open Unified Process, is a simplified version of the Rational Unified Process (RUP) used for agile and iterative software development. It was developed within the Eclipse Foundation and is based on the donation of process content by IBM. OpenUP targets small and colocated teams interested in agile and iterative development and is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle. It embraces a pragmatic approach and is positioned as an easy and flexible version of RUP [1][2][3]
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="share-reaction-area">
+                        <ul>
+                            <li><a href="#" class="openuptip" tooltip="Save It"><i class="fa-regular fa-bookmark"></i></a></li>
+                            <li><a href="#" class="openuptip" tooltip="Like"><i class="fa-light fa-thumbs-up"></i></a></li>
+                            <li><a href="#" class="openuptip" tooltip="Unlike"><i class="fa-regular fa-thumbs-down"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="single__question__answer">
+                    <div class="question_user">
+                        <div class="left_user_info">
+                            <img src="{{ URL::asset('build/images/avatar/03.png') }}" alt="avatar">
+                            <div class="question__user">what is openup?</div>
+                        </div>
+                        <div class="edit__icon openuptip" tooltip="Edit It">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                    <div class="answer__area">
+                        <div class="thumbnail">
+                            <img src="{{ URL::asset('build/images/avatar/04.png') }}" alt="avatar">
+                        </div>
+                        <div class="answer_main__wrapper">
+                            <h4 class="common__title">Openup</h4>
+                            <p class="disc">
+                                The Open Unified Process, is a simplified version of the Rational Unified Process (RUP) used for agile and iterative software development. It was developed within the Eclipse Foundation and is based on the donation of process content by IBM. OpenUP targets small and colocated teams interested in agile and iterative development and is a lean Unified Process that applies iterative and incremental approaches within a structured lifecycle. It embraces a pragmatic approach and is positioned as an easy and flexible version of RUP [1][2][3]
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="share-reaction-area">
+                        <ul>
+                            <li><a href="#" class="openuptip" tooltip="Save It"><i class="fa-regular fa-bookmark"></i></a></li>
+                            <li><a href="#" class="openuptip" tooltip="Like"><i class="fa-light fa-thumbs-up"></i></a></li>
+                            <li><a href="#" class="openuptip" tooltip="Unlike"><i class="fa-regular fa-thumbs-down"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="single__question__answer">
+                    <div class="question_user">
+                        <div class="left_user_info">
+                            <img src="{{ URL::asset('build/images/avatar/03.png') }}" alt="avatar">
+                            <div class="question__user">what is openup?</div>
+                        </div>
+                        <div class="edit__icon openuptip" tooltip="Edit It">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                    <div class="answer__area">
+                        <div class="thumbnail">
+                            <img src="{{ URL::asset('build/images/avatar/04.png') }}" alt="avatar">
+                        </div>
+                        <div class="answer_main__wrapper">
+                            <h4 class="common__title">Openup</h4>
+                            <p class="disc">
+                                Working with a chatbot involves several steps, from designing and building the bot to deploying and maintaining it. Here's a general overview of how to work with a chatbot:
+                            </p>
+                            <div class="order_list_answer">
+                                <ol>
+                                    <li>
+                                        <p>Define the Purpose: Determine the purpose and goals of the chatbot. What tasks or interactions do you want the bot to handle? Who is the target audience?</p>
+                                    </li>
+                                    <li>
+                                        <p>Define the Purpose: Determine the purpose and goals of the chatbot. What tasks or interactions do you want the bot to handle? Who is the target audience?</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="share-reaction-area">
+                        <ul>
+                            <li><a href="#" class="openuptip" tooltip="Save It"><i class="fa-regular fa-bookmark"></i></a></li>
+                            <li><a href="#" class="openuptip" tooltip="Like"><i class="fa-light fa-thumbs-up"></i></a></li>
+                            <li><a href="#" class="openuptip" tooltip="Unlike"><i class="fa-regular fa-thumbs-down"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="search-form">
+                <input type="text" placeholder="Message openup...">
+                <button><i class="fa-regular fa-arrow-up"></i></button>
+            </form>
+            <div class="copyright-area-bottom">
+                <p> <a href="#">ThemeWant©</a> 2024. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="right-side-bar-new-chat-option">
+            <div class="new-chat-option">
+                <img src="{{ URL::asset('build/images/logo/logo-02.png') }}" alt="logo">
+                <img src="{{ URL::asset('build/images/icons/04.png') }}" alt="icons">
+            </div>
+            <div class="chat-history-wrapper">
+                <div class="chat-history-area-start">
+                    <h6 class="title">Today</h6>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>ranking water is essential</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>These foods are calorie</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>If you're struggling to</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                </div>
+                <div class="chat-history-area-start">
+                    <h6 class="title">Yesterday</h6>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>ranking water is essential</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>These foods are calorie</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>If you're struggling to</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                </div>
+                <div class="chat-history-area-start">
+                    <h6 class="title">11/03/2024</h6>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>ranking water is essential</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>These foods are calorie</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>If you're struggling to</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                </div>
+                <div class="chat-history-area-start">
+                    <h6 class="title">28/04/2024</h6>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>ranking water is essential</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>These foods are calorie</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>If you're struggling to</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                    <div class="single-history">
+                        <p>Online School Education</p>
+                        <img src="{{ URL::asset('build/images/icons/05.svg') }}" alt="icons">
+                    </div>
+                </div>
+            </div>
+            <div class="right-side-open-clouse" id="collups-right">
+                <img src="{{ URL::asset('build/images/icons/01.svg') }}" alt="icons">
+            </div>
+        </div>
+@endsection  
