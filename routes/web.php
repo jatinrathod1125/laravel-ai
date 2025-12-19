@@ -22,6 +22,7 @@ Route::get('/auth/google/redirect', [GoogleController::class, 'redirect'])
 
 Route::get('/auth/google/callback', [GoogleController::class, 'callback'])
     ->name('google.callback');
+    
 
 // Define a group of routes with 'auth' middleware applied
 Route::middleware(['auth'])->group(function () {
