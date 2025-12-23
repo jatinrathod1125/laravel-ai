@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -22,7 +23,7 @@ Route::get('/auth/google/redirect', [GoogleController::class, 'redirect'])
 
 Route::get('/auth/google/callback', [GoogleController::class, 'callback'])
     ->name('google.callback');
-    
+
 
 // Define a group of routes with 'auth' middleware applied
 Route::middleware(['auth'])->group(function () {
@@ -30,3 +31,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 });
+
+
+Route::get('/admin-dashboard',[AdminDashboardController::class, 'index'])->name('admin.dashboard');
