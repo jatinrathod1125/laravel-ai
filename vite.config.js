@@ -11,32 +11,39 @@ export default defineConfig({
         
     },
     plugins: [
-        
+        // Laravel plugin registers build entry points and generates a manifest
+        laravel({
+            input: [
+                'resources/js/main.js',
+                'resources/css/style.css'
+            ],
+        }),
         viteStaticCopy({
             targets: [
+                // copy contents of resources/css into public/build/css (avoid css/css)
                 {
-                    src: 'resources/css',
+                    src: 'resources/css/*',
                     dest: 'css'
                 },
                 {
-                    src: 'resources/fonts',
-                    dest: ''
+                    src: 'resources/fonts/*',
+                    dest: 'fonts'
                 },
                 {
-                    src: 'resources/images',
-                    dest: ''
+                    src: 'resources/images/*',
+                    dest: 'images'
                 },
                 {
-                    src: 'resources/js',
-                    dest: ''
+                    src: 'resources/js/*',
+                    dest: 'js'
                 },
                 {
-                    src: 'resources/maps',
-                    dest: ''
+                    src: 'resources/maps/*',
+                    dest: 'maps'
                 },
                 {
-                    src: 'resources/scss',
-                    dest: ''
+                    src: 'resources/scss/*',
+                    dest: 'scss'
                 },
             ],
         })
