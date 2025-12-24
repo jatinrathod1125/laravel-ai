@@ -48,12 +48,6 @@
             </a>
         </div>
         <div class="single-menu-wrapper">
-            <a href="register" class="single-menu">
-                <div class="icon">
-                    <img src="{{ URL::asset('build/images/icons/07.png') }}" alt="icons">
-                </div>
-                <p>Register</p>
-            </a>
             <a class="collapse-btn collapsed single-menu" data-bs-toggle="collapse" href="#collapseExample"
                 role="button" aria-expanded="false" aria-controls="collapseExample">
                 <div class="icon">
@@ -70,21 +64,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="login">
-                            <i class="fa-sharp fa-regular fa-shopping-bag"></i>
-                            <span>Login</span>
-                        </a>
-                    </li>
-                    <li>
                         <a href="reset">
                             <i class="fa-sharp fa-regular fa-users"></i>
                             <span>Reset Password</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="community-details">
-                            <i class="fa-sharp fa-regular fa-users"></i>
-                            <span>Community Details</span>
                         </a>
                     </li>
                 </ul>

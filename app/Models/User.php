@@ -31,6 +31,27 @@ class User extends Authenticatable
         'google_id'
     ];
 
+    public function subscription()
+    {
+        return $this->hasOne(Subscriptions::class);
+    }
+
+   public function plan()
+{
+    return $this->belongsTo(Plans::class);
+}
+
+public function getCurrentPlanAttribute()
+{
+    return $this->subscription?->plan
+        ?? Plans::where('is_free', 1)->first();
+}
+
+
+    public function planFeature($key)
+    {
+        return $this->plan()->feature($key);
+    }
     /**
      * The attributes that should be hidden for serialization.
      *
